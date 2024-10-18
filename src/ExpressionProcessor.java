@@ -8,8 +8,8 @@ public class ExpressionProcessor {
 
         Validator.CheckNumberTypes(numbers);
 
-        int num1 = NumberParses.parseNumber(numbers[0]);
-        int num2 = NumberParses.parseNumber(numbers[1]);
+        int num1 = NumberRangeValidator.parseNumber(numbers[0]);
+        int num2 = NumberRangeValidator.parseNumber(numbers[1]);
         int result = Calculation.calculate(num1, num2, operator);
 
         if (Roman.isRoman(numbers[0])&&Roman.isRoman(numbers[1])){
@@ -21,4 +21,3 @@ public class ExpressionProcessor {
         }
     }
 }
-
