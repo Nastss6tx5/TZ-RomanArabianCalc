@@ -46,7 +46,6 @@ public class Roman {
     }
 
     public static boolean isRoman(String input) {
-
         for (String roman : romanNumbers) {
             if (roman.equals(input)) {
                 return true;
