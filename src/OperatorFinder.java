@@ -14,16 +14,11 @@ public class OperatorFinder {
 
     public static String OperatorToString(char operator) throws Exception{
         switch (operator){
-            case '+':
-                return "\\+";
-            case '-':
-                return "-";
-            case '*':
-                return "\\*";
-            case '/':
-                return "/";
-            default:
-                throw new Exception("Некорректный оператор.");
+            case '+': return "\\+";
+            case '-': return "-";
+            case '*': return "\\*";
+            case '/': return "/";
+            default: throw new Exception("Некорректный оператор.");
         }
     }
 }
