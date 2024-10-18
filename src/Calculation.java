@@ -5,7 +5,7 @@ public class Calculation {
             case '-': return num1 - num2;
             case '*': return num1 * num2;
             case '/':
-                if(num2==0) {
+                if (num2==0) {
                     throw new Exception("Деление на ноль невозможною");
                 }
                 return num1 / num2;
