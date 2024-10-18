@@ -14,13 +14,13 @@ public class Roman {
             "XCIX", "C"
     };
 
-    protected static String romanSolution(int arabNumeral) throws Exception{
+    public static String romanSolution(int arabNumeral) throws Exception{
         if ((arabNumeral <= 0) || (arabNumeral > Roman_ALL.length)) {
             throw new Exception("Римские числа выходят за допустимый диапазон");
         } return Roman_ALL[arabNumeral];
     }
 
-    protected static int romanNum(String roman) {
+    public static int romanNum(String roman) {
         if (roman.equals(romanNumbers[0])) {
             return 1;
         } else if (roman.equals(romanNumbers[1])) {
