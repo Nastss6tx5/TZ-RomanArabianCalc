@@ -6,10 +6,10 @@ public class Calculation {
             case '*': return num1 * num2;
             case '/':
                 if (num2==0) {
-                    throw new Exception("Деление на ноль невозможною");
+                    throw new Exception("Деление на ноль невозможно.");
                 }
                 return num1 / num2;
-            default: throw new Exception("Некорректная операция");
+            default: throw new Exception("Некорректная операция.");
         }
     }
 }
